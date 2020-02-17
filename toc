@@ -1,0 +1,30 @@
+{:navgroup: .navgroup}
+{:topicgroup: .topicgroup}
+
+{: .toc subcollection="sap-data-hub" audience="compute" href="docs/infrastructure/sap-data-hub?topic=getting-started" path="infrastructure/sap-data-hub"}
+SAP Data Hub on IBM Cloud
+
+    {: .navgroup id="learn"}
+    sap-dh-index.md
+    [What are Containers?](https://www.ibm.com/cloud/learn/containers)
+    [What is Kubernetes?](https://www.ibm.com/cloud/learn/kubernetes)
+    [What is Red Hat OpenShift on IBM Cloud?](https://www.ibm.com/cloud/openshift)
+    [What is SAP Data Hub?](https://www.sap.com/products/data-hub.html)
+    [SAP Data Hub 2 on OpenShift Container Platform 3 - Requirements](https://access.redhat.com/articles/3630111#requirements)
+    {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    {: .topicgroup}
+    Provisioning
+        sap-dh-create-os-cluster.md
+        sap-dh-prepare-jump-host.md
+        sap-dh-configure-dynamic-storage-provider.md
+        sap-dh-set-up-external-image-registry.md
+        sap-dh-deploy-sdh-observer.md
+        sap-dh-install-sh.md
+        sap-dh-modeler.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [SAP Data Hub 2 on OpenShift Container Platform 3 - Requirements](https://access.redhat.com/articles/3630111#requirements)
+    {: .navgroup-end}
