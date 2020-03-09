@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-02-17"
+lastupdated: "2020-03-09"
 
 keywords: SAP Data Hub, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.cos_short}}, {{site.data.keyword.openshiftlong_notm}}, {{site.data.keyword.openshiftshort}}, Red Hat Enterprise Linux, SAP Data Hub on {{site.data.keyword.cloud_notm}}, data orchestration, data governance, data integration
 
@@ -33,7 +33,7 @@ The project's namespace and {{site.data.keyword.registryshort_notm}} names used 
     {: note}
 
     Find your region.
-    
+
     ```
     ibmcloud cr api
     ```
@@ -46,7 +46,7 @@ The project's namespace and {{site.data.keyword.registryshort_notm}} names used 
 
     The command line is: `oc patch secret --dry-run -o yaml -n default <local_secret>  -p '{"metadata":{"namespace": "<project_name>"}}' | oc -n sdh create -f -`
     ```
-    oc patch secret --dry-run -o yaml -n default default-de-icr-io -p '{"metadata":{"namespace": "sdh"}}' | oc -n sdh create -f -
+    oc patch secret --dry-run -o yaml -n default default-de-icr-io -p '{"metadata": {"namespace": "sdh", "name": "sdh-de-icr-io"}}' | oc -n sdh create -f -
     ```
     {: pre}
 
@@ -61,7 +61,7 @@ The project's namespace and {{site.data.keyword.registryshort_notm}} names used 
 
     Review the [Required Input Parameters](https://access.redhat.com/articles/3630111#deploy-sdh-observer){: external} to confirm the deployment instructions and the source URL are valid.
     {: note}
-    
+
     ```
     oc process -f https://raw.githubusercontent.com/redhat-sap/sap-datahub/master/sdh-observer.yaml \
     BASE_IMAGE_TAG=v3.11 SDH_NAMESPACE=sdh MAKE_VSYSTEM_IPTABLES_PODS_PRIVILEGED=true NAMESPACE=sdh \
