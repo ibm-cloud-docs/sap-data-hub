@@ -2,7 +2,7 @@
 
 copyright:
   years: 2020
-lastupdated: "2020-03-09"
+lastupdated: "2020-03-24"
 
 keywords: SAP Data Hub, {{site.data.keyword.cloud_notm}}, {{site.data.keyword.cos_full_notm}}, {{site.data.keyword.cos_short}}, {{site.data.keyword.openshiftlong_notm}}, {{site.data.keyword.openshiftshort}}, Red Hat Enterprise Linux, SAP Data Hub on {{site.data.keyword.cloud_notm}}, data orchestration, data governance, data integration
 
@@ -72,4 +72,6 @@ The project's namespace and {{site.data.keyword.registryshort_notm}} names used 
 ## Next Steps
 {: #next-steps-deploying}
 
-Manual installation is recommended. Follow the [manual installation using an installation script](https://access.redhat.com/articles/3630111#manual){: external} instructions, and the instructions for [running the installation script](/docs/infrastructure/sap-data-hub?topic=sap-data-hub-run-install-sh) for the {{site.data.keyword.cloud_notm}} specific parameters.
+For production environments, storage for SAP Vora checkpoint needs to be set up. Follow [these instructions](/docs/sap-data-hub?topic=sap-data-hub-set-up-checkpoint-storage) to set up {{site.data.keyword.cos_full_notm}} and to define the parameters that will be handed over to the installation dialog.
+
+If installing SAP Data Hub for test and evaluation, skip this step and go directly to the [Manual Installation using an installation script (manual)](https://access.redhat.com/articles/3630111#manual){: external} instructions, and the instructions for [running the installation script](docs/infrastructure/sap-data-hub?topic=sap-data-hub-run-install-sh) for the {{site.data.keyword.cloud_notm}} specific parameters.

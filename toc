@@ -21,6 +21,7 @@ SAP Data Hub on IBM Cloud
         sap-dh-configure-dynamic-storage-provider.md
         sap-dh-set-up-external-image-registry.md
         sap-dh-deploy-sdh-observer.md
+        sap-dh-checkpoint-storage.md
         sap-dh-install-sh.md
         sap-dh-modeler.md
     {: .navgroup-end}
