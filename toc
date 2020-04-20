@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="sap-data-hub" audience="compute" href="docs/infrastructure/sap-data-hub?topic=getting-started" path="infrastructure/sap-data-hub"}
+{: .toc subcollection="sap-data-hub" category="containers,compute" audience="compute" href="docs/infrastructure/sap-data-hub?topic=getting-started" path="infrastructure/sap-data-hub"}
 SAP Data Hub on IBM Cloud
 
     {: .navgroup id="learn"}
